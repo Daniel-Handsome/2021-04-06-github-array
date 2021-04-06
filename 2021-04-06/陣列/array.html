@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 180px;
+            height: 20px;
+            background-color: rgb(130, 159, 184);
+            border: 2px antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="輸入框">
+
+    <div class="div">輸出框</div>
+
+
+    <button id="in">加入</button>
+    <button id="out">移除</button>
+    <button>搜尋</button>
+
+
+    <script>
+        var varInput = TestArray = [];
+        console.log(TestArray);
+
+        var varOutPut = document.querySelector('.div');
+        //button One
+        document.querySelector('#in').addEventListener('click', function () {
+            var varInputValue = document.querySelector('#input').value;
+            varInput.push('' + varInputValue + '');
+            varOutPut.innerHTML = varInput;
+        })
+
+        //button two
+        document.querySelector('#out').addEventListener('click', function () {
+            var varInputValue = document.querySelector('#input').value;
+            var inputFind = TestArray.indexOf('' + varInputValue + '');
+
+            if (inputFind != -1) {
+                var inputArray = varInput.splice(inputFind, 1);
+
+                varOutPut.innerHTML = TestArray;
+            }
+        })
+       
+
+
+
+        //1 輸入框  三按鈕
+        //第一個按鈕 加入陣列(將輸入框的內容加入陣列最後方)
+        // 陣列全部內容
+        //第二個按鈕式  移除(將輸入框的內容 從陣列中移除)
+        // 陣列全部內容
+        //第三個按鈕式搜尋(找尋輸入的有沒有在裡面)
+        //輸出 索引 或找不到
+    </script>
+</body>
+
+</html>

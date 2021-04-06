@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgba(118, 128, 128, 0.363);
+        }
+        .outPut{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(74, 153, 153, 0.514);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <span>結果</span>
+    <div class="outPut"></div>
+    <button>10!</button>
+    <button>15!</button>
+    <button>20!</button>
+
+
+
+    <script>
+        function multiplication1(x){
+            var  count = 1;
+            for(i = 1 ; i<=x; i++){
+                count *= i ;
+            }
+            console.log(count);
+        };
+        multiplication1(10);
+        multiplication1(15);
+        multiplication1(20);
+       
+        
+        </script>
+
+    <!-- <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button>
+    <button class="button"></button> -->
+
+
+    <!-- <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+    <script>
+        var boxs = document.querySelectorAll('div');
+        console.log(boxs);
+        boxs.forEach(function (color) {
+            color.style.setProperty('background' , 'red')
+            color.style.width ='100px'; 
+            color.style.height ='100px'; 
+            // color.style.backgroundColor = 'red';
+        });
+    </script> -->
+
+    <!-- <script>
+        var varArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',];
+
+
+        for (i = 0; i < varArray.length; i++) {
+            console.log(varArray[i]);
+        }
+
+    </script> -->
+</body>
+
+</html>
